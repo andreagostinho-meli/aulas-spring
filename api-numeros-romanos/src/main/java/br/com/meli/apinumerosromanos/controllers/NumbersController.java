@@ -14,8 +14,8 @@ public class NumbersController {
         String[] romanLiterals = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         StringBuilder roman = new StringBuilder();
 
-        for(int i = 0; i < values.length; i++) {
-            while(number >= values[i]) {
+        for (int i = 0; i < values.length; i++) {
+            while (number >= values[i]) {
                 number -= values[i];
                 roman.append(romanLiterals[i]);
             }
