@@ -39,7 +39,7 @@ public class ProductModel {
     public void delete(int code) {
         for(Product product : productsList) {
             if(product.getCode() == code) {
-                productsList.remove(productsList.indexOf(product));
+                productsList.remove(product);
                 break;
             }
         }
